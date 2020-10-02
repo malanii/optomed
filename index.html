@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -32,23 +34,23 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About me</a>
+                            <a class="nav-link" href="#aboutMe">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Benefits</a>
+                            <a class="nav-link" href="#benefits">Benefits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Preparation for surgery</a>
+                            <a class="nav-link" href="#preparation">Preparation for surgery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Medical examination</a>
+                            <a class="nav-link" href="#examination">Medical examination</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link modal-link" href="#">Schedule a visit</a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                            <!--<a class="button nav-link modal-link" href="#">Schedule a visit</a>-->
+                        <!--</li>-->
 
                     </ul>
 
@@ -61,7 +63,7 @@
                     <img src="img/header_small_pict.png"/>
                     <p class="text-main header-text">Doctor Maria Han's office</p>
                     <p class="text-main header-text header-text-main">Support <br/>for modern ophthalmology</p>
-                    <a class="button" href="#">Schedule a visit</a>
+                    <button class="button">Schedule a visit</button>
                 </div>
 
                 <img class="header-dots" src="img/header_dots.jpg">
@@ -72,7 +74,7 @@
 
     <!----------------------------header ends------------------------------------------------------>
     <!----------------------------about starts------------------------------------------------------>
-    <div class="about container">
+    <div id="aboutMe" class="about container">
         <div>
             <img class=" about-img-shadow" src="img/about_1.png">
             <img class="about-img about-img-shadow" src="img/about_2.png">
@@ -109,8 +111,8 @@
             </div>
         </div>
     </div>
-    <!------------------------------services starts-->
-    <div class="services-wrapper container">
+    <!------------------------------services starts--------------------------------------------------->
+    <div id="services" class="services-wrapper container">
         <h1 class="title">Scope of services provided</h1>
         <div class="services-section col-12">
             <div class=" services-item">
@@ -144,12 +146,13 @@
                     difficulties related to binocular functioning, and exercises when
                     the eyesight, due to the lack of proper cooperation of both
                     eyeballs, is aillng.</p>
-                <a class="button " href="#">Schedule a visit</a>
+                <button class="button ">Schedule a visit</button>
             </div>
         </div>
     </div>
+    <!------------------------------services ends--------------------------------------------------->
     <!---------------------------------benefits starts--------------------------->
-    <div class="benefits-wrapper">
+    <div id="benefits" class="benefits-wrapper">
         <div class="container">
             <img class="sections-icons" src="img/benefits.jpg"/>
             <h2 class="title">Benefits of using the service of such experts</h2>
@@ -223,7 +226,7 @@
                 <div class="benefits-additional">
                     <p class="text-main">An experienced specialist at your fingertips, do not
                         hesitate!</p>
-                    <a class="button" href="#">Schedule a visit</a>
+                    <button class="button">Schedule a visit</button>
                 </div>
             </div>
 
@@ -231,10 +234,11 @@
 
     </div>
     <!----------------------------preparation block starts-------------------------------------------------------->
-    <div class="col-8 m-auto">
+    <div id="preparation" class="col-8 m-auto">
         <img class="sections-icons" src="img/preparation_icon.jpg">
         <h3 class="title">Preparation for surgery</h3>
-        <p class="text-common text-center col-10 m-auto">Are you planning an ophthalmic procedure? We will make sure that
+        <p class="text-common text-center col-10 m-auto">Are you planning an ophthalmic procedure? We will make sure
+            that
             your
             recovery is quick. We provide full care before and after the procedure.</p>
         <img class="preparation-img-dots-1" src="img/triangle_dots.jpg">
@@ -275,7 +279,7 @@
     </div>
     <!----------------preparation block ends--------------------------------------------------------------------------->
     <!---------------------------medical examination starts---------------------------->
-    <div class="examination container">
+    <div id="examination" class="examination container">
         <h4 class="title">Medical examinations that we do</h4>
         <div class="services-section">
             <div class="services-item">
@@ -309,18 +313,77 @@
                 </div>
                 <div>
                     <p class="footer-header">Book your visit today!</p>
-                    <a class="button" href="#">Schedule a visit</a>
+                    <button class="button">Schedule a visit</button>
                 </div>
             </div>
-            <div class="footer-detail-text-wrapper"><p class="footer-detail-text">OPTOMED &copy; 2020</p></div>
+            <div class="footer-detail-text-wrapper"><p class="footer-detail-text">OPTOMED &copy; 2020 by Yana
+                Ignatova</p></div>
 
 
         </div>
 
     </div>
+    <!--------------------------arrow to top---------------------------------------------------------->
+    <a href="#" onclick="topFunction()" id="topBtn" class="scroll-button"><i
+            class="fa fa-chevron-up icon-to-top"></i></a>
+    <!--------------------------arrow to top---------------------------------------------------------->
+<!-------------------------------------------modal window---------------------------------------------->
+    <div id="myModal" class="modal">
 
+        <div id="modalContent" class="modal-content">
+            <button id="closeModal" class="closeModal">&times;</button>
+            <h5 class="title mt-2 mb-2">Book your appointment</h5>
+            <div id="error_message"></div>
+            <form  id="form">
+                <div class="modal-input-wrapper">
+                    <input class="modal-input" type="text" id='name' placeholder="Your Name">
+                    <i class="modal-icons fa fa-check-circle"></i>
+                    <i class="modal-icons fa fa-exclamation-circle"></i>
+                    <p></p>
+                </div>
+                <div class="modal-input-wrapper">
+                <input class="modal-input" type="text"  id='email' placeholder="Your Email">
+                    <i class="modal-icons fa fa-check-circle"></i>
+                    <i class="modal-icons fa fa-exclamation-circle"></i>
+                    <p></p>
+                </div>
 
+                <div class="modal-input-wrapper">
+                <input class="modal-input" type="text"  id='phone' placeholder="Your Contact Number">
+                    <i class="modal-icons fa fa-check-circle"></i>
+                    <i class="modal-icons fa fa-exclamation-circle"></i>
+                    <p></p>
+                </div>
+                <div class="modal-input-wrapper">
+                <input class="modal-input" type="text" id='date' placeholder="Date">
+                    <i class="modal-icons fa fa-check-circle"></i>
+                    <i class="modal-icons fa fa-exclamation-circle"></i>
+                    <p></p>
+                </div>
+                <div class="modal-input-wrapper">
+                <input class="modal-input" id='message' placeholder="Message">
+                    <i class="modal-icons fa fa-check-circle"></i>
+                    <i class="modal-icons fa fa-exclamation-circle"></i>
+                    <p class="mb-2"></p>
+                </div>
+
+                <button id="modalSubmit" class="modal-submit-button" type="submit">Get appointment</button>
+            </form>
+
+        </div>
+    </div>
+    <!------------------------------success message----------------------------------------------------->
+    <div id="successMessage" class="modal-content-success-wrapper">
+        <div class="modal-content-success">
+            <h6 class="title">Thanks!<br/>Our manager will connect with you in one hour. </h6>
+        </div>
+
+    </div>
+    <!--------------------------------------modal window ends------------------------------------------>
 </div>
+<script src="js/scrollToTop.js"></script>
+<script src="js/modalWindow.js"></script>
+<script src="https://use.fontawesome.com/c44a79e7ba.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
