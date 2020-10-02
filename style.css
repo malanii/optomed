@@ -263,7 +263,8 @@
 }
 
 .preparation-item {
-    box-shadow: -3px 26px 88px -25px rgba(111, 255, 206, 0.52);
+    /*box-shadow: -3px 26px 88px -25px rgba(111, 255, 206, 0.52);*/
+    box-shadow: 4px 4px 61px 9px rgba(111,255,206,0.25);
     border-radius: 50%;
     width: 180px;
     height: 180px;
