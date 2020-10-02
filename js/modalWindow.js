@@ -99,7 +99,7 @@ function checkIfSuccess() {
             if (count === 5) {
                 successMessage.style.display = "block";
                 modal.style.display = "none";
-                setTimeout(() => successMessage.style.display = "none", 1500);
+                setTimeout(() => successMessage.style.display = "none", 2000);
                 clearInputValue();
             }
         }
