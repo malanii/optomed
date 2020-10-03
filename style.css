@@ -252,33 +252,24 @@
     }
 }
 
-
 /*--------------------services--------------------*/
-
 
 .services-wrapper {
     margin-bottom: 100px;
-    /*box-sizing: border-box;*/
 }
 
 .services-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*box-sizing: border-box;*/
-
 }
 
 .services-item {
-    /*width: 270px;*/
     width: 23%;
     margin: 0 10px 50px 10px;
-    /*margin-right: 20px;*/
-    /*margin-bottom: 50px;*/
     padding: 30px 10px;
     box-shadow: -3px 23px 85px -25px rgba(111, 255, 206, 0.52);
 }
-
 
 .services-desc {
     margin: 30px 0;
@@ -314,8 +305,6 @@
     .text-main {
         font-size: 14px;
     }
-
-
 }
 
 
@@ -374,7 +363,6 @@
 
 .benefits-button {
     display: block;
-    /*margin-top: 20px;*/
     margin: auto;
 }
 
@@ -487,11 +475,6 @@
 
 }
 
-.footer-item {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-}
-
 .footer-header {
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
@@ -503,7 +486,6 @@
 .footer-text {
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
-    /*font-weight: bold;*/
     color: #bcbcc8;
     margin-bottom: 10px;
 }
@@ -619,7 +601,6 @@
 
 .closeModal:hover {
     transform: scale(1.2);
-
 }
 
 .modal-submit-button:hover {
@@ -681,7 +662,6 @@
 }
 
 .modal-content-success {
-    /*background-color: #fefefe;*/
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -709,8 +689,14 @@
     }
     .footer {
         padding: 30px 30px 10px;
-
     }
-
+    .modal-content-success {
+        width: 60%;
+    }
+}
+@media only screen and (min-width:720px) and (max-width:991px){
+    .modal-content-success {
+        width: 50%;
+    }
 }
 /*-------------------------------------modal ends--------------------------------------------*/
