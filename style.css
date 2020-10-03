@@ -265,7 +265,7 @@
 }
 
 .services-item {
-    width: 23%;
+    width: 22%;
     margin: 0 10px 50px 10px;
     padding: 30px 10px;
     box-shadow: -3px 23px 85px -25px rgba(111, 255, 206, 0.52);
@@ -503,7 +503,7 @@
 .footer-detail-text-wrapper {
     margin-top: 50px;
     border-top: 1px solid #34335f;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .scroll-button {
