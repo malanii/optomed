@@ -1,6 +1,11 @@
 .header-wrapper {
     background-color: #fcf8f5;
     padding-bottom: 80px;
+    /*background-image: url("img/background.gif");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+
 }
 
 .nav-logo {
@@ -38,6 +43,7 @@
 .navbar-expand-lg {
     padding-top: 25px;
 }
+
 .navbar-toggler {
     background-color: transparent;
 }
@@ -76,10 +82,71 @@
 .header-text {
     margin: 10px 0;
 }
-.header-dots{
+
+.header-text-main {
+    font-family: 'Kanit', sans-serif;
+    color: #1d1b4c;
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.header-dots {
     position: absolute;
     bottom: -5%;
-    left:60%
+    left: 60%
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .header-dots {
+        display: none;
+    }
+
+    .header-text-main {
+        font-size: 40px;
+        /*font-weight: 700;*/
+    }
+    /*.collapse.navbar-collapse{*/
+        /*padding-left: 0;*/
+    /*}*/
+    /*.expand-lg.navbar-nav.nav-link{*/
+        /*padding-left: 0; !important;*/
+    /*}*/
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header-text-main {
+        font-size: 30px;
+    }
+    /*.container{*/
+        /*max-width: 95%;*/
+    /*}*/
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .container{
+    max-width: 95%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .header-text-main {
+      display: none;
+    }
+
+}
+
+/*-------------------------------common----------------------------------*/
+.title {
+    font-family: 'Kanit', sans-serif;
+    color: #1d1b4c;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 100px 0 50px;
 }
 .text-main {
     font-family: 'Kanit', sans-serif;
@@ -88,19 +155,14 @@
     color: #1d1b4c;
     line-height: 1.3;
 }
-.text-common{
-    font-family: 'Kanit', sans-serif;
+
+.text-common {
+
     font-size: 16px;
     color: #1d1b4c;
     line-height: 1.3;
 }
 
-
-.header-text-main {
-    font-size: 60px;
-    margin-bottom: 30px;
-    line-height: 1.2;
-}
 
 .button {
     background-color: #6fffce;
@@ -110,20 +172,21 @@
     font-size: 14px;
     box-shadow: 0px 0px 26px 5px rgba(111, 255, 206, 0.52);
     width: 145px;
-    /*height: 50px;*/
     padding: 15px 20px;
     border: transparent;
 }
-.button:focus{
+
+.button:focus {
     outline: none;
 }
+
 .button:hover {
     color: white;
     text-decoration: none;
-    background: linear-gradient(90deg, rgba(29,27,76,1) 0%, rgba(74,172,139,1) 50%, rgba(29,27,76,1) 100%);
-
+    background: linear-gradient(90deg, rgba(29, 27, 76, 1) 0%, rgba(74, 172, 139, 1) 50%, rgba(29, 27, 76, 1) 100%);
 }
 
+/*----------------------------------------about-----------------------------------------------------------------*/
 .about {
     display: flex;
     justify-content: space-between;
@@ -135,41 +198,69 @@
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
     font-weight: 500;
-    margin: 20px 0 40px ;
+    margin: 20px 0 40px;
 }
-.about-img-shadow{
-    box-shadow: -10px 37px 110px -25px rgba(240,227,217,1);
+
+.about-img-shadow {
+    box-shadow: -10px 37px 110px -25px rgba(240, 227, 217, 1);
 }
-.about-img{
-    margin-top: -20px;
-    margin-left: 100px;
+
+.about-img-container {
+    position: relative;
+}
+
+.about-img {
+    position: absolute;
+    top: 22%;
+    left: 13%;
+    /*margin-top: -20px;*/
+    /*margin-left: 100px;*/
 
 }
-.about-dots{
+
+.about-dots {
     position: absolute;
-    top:31%;
-    left:3%;
+    top: 31%;
+    left: 3%;
     z-index: -100;
 }
+
 .about-experience {
     display: flex;
     justify-content: space-between;
-
+/*align-items: center;*/
     margin-top: 20px;
 }
-
+.about-experience-img{
+    /*height: 300px;*/
+}
 .about-experience-text {
     background-color: #e8fff7;
     padding: 20px;
+    margin-top: 20px;
 }
-.title {
-    font-family: 'Kanit', sans-serif;
-    color: #1d1b4c;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 100px 0 50px;
+
+/*.about-experience-text-margin{*/
+/*margin-top: 30px;*/
+/*}*/
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .about-img-shadow, .about-dots, .about-img-container{
+        display: none;
+    }
+
+    .about-experience-text {
+        padding: 25px;
+    }
+
+    .about-experience-text {
+        /*margin-top: 20px;*/
+    }
 }
+
+
+
+/*--------------------services--------------------*/
+
 
 .services-wrapper {
     margin-bottom: 100px;
@@ -179,23 +270,46 @@
 .services-section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /*box-sizing: border-box;*/
 
 }
 
 .services-item {
-    width: 270px;
+    /*width: 270px;*/
+    width: 25%;
+
     margin-right: 20px;
     margin-bottom: 50px;
     padding: 50px 10px;
     box-shadow: -3px 23px 85px -25px rgba(111, 255, 206, 0.52);
 }
 
+
 .services-desc {
-    display: flex;
-    justify-content: space-between;
     margin: 30px 0;
 }
+.services-desc-margin{
+    margin-top: 20px;
+}
+@media only screen and (min-width: 720px) {
+    .services-desc {
+        display: flex;
+        justify-content: space-between;
+    }
+    .services-desc-margin{
+      margin-top: 0;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+    .services-item{
+        width: 43%;
+    }
+
+}
+
+
+
 /*---------------------------------benefits------------------------------------------*/
 .benefits-wrapper {
     background-color: #fcf8f5;
@@ -232,6 +346,7 @@
     font-weight: 700;
     text-shadow: #6fffce 2px 2px;
 }
+
 .benefits-img-dots-1 {
     position: absolute;
     top: 31%;
@@ -245,10 +360,29 @@
 }
 
 .benefits-additional {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 100px;
+}
+.benefits-button{
+    display: block;
+    /*margin-top: 20px;*/
+    margin: auto;
+}
+.benefits-additional-text{
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media only screen and (min-width: 720px) {
+    .benefits-additional {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .benefits-additional-text{
+        margin-bottom: 0;
+    }
+    .benefits-button{
+        margin: 0;
+    }
 }
 /*----------------------------------------------preparation----------------------------------*/
 .preparation {
@@ -264,7 +398,7 @@
 
 .preparation-item {
     /*box-shadow: -3px 26px 88px -25px rgba(111, 255, 206, 0.52);*/
-    box-shadow: 4px 4px 61px 9px rgba(111,255,206,0.25);
+    box-shadow: 4px 4px 61px 9px rgba(111, 255, 206, 0.25);
     border-radius: 50%;
     width: 180px;
     height: 180px;
@@ -298,12 +432,14 @@
     bottom: -10%;
     right: 1%;
 }
+
 /*-------------------------------examination---------------------------------------------*/
 .examination {
     margin-top: 200px;
     margin-bottom: 100px;
 
 }
+
 /*------------------------------footer---------------------------------------------*/
 .footer {
     background-color: #1d1b4c;
@@ -346,17 +482,20 @@
     border-top: 1px solid #34335f;
     padding-top: 50px;
 }
-.scroll-button{
+
+.scroll-button {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
 }
-.fa.fa-chevron-up.icon-to-top{
+
+.fa.fa-chevron-up.icon-to-top {
     color: #6fffce;
     font-size: 36px;
 }
+
 /*----------------------------------------modal----------------------------------*/
 .modal {
     display: none;
@@ -367,9 +506,10 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
@@ -379,7 +519,8 @@
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-.closeModal{
+
+.closeModal {
     position: absolute;
     right: 1%;
     top: 1%;
@@ -389,19 +530,29 @@
     color: #1d1b4c;
     font-size: 16px;
 }
+
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
-.modal-input{
+
+.modal-input {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
 }
-.modal-input:focus{
+
+.modal-input:focus {
     outline: #6fffce;
 }
-.modal-submit-button{
+
+.modal-submit-button {
     width: 100%;
     background-color: #6fffce;
     border-radius: 5px;
@@ -411,26 +562,31 @@
     padding: 15px 20px;
     border: transparent;
 }
-.closeModal:focus, .modal-submit-button:focus{
+
+.closeModal:focus, .modal-submit-button:focus {
     outline: none;
 }
 
-.closeModal:hover{
+.closeModal:hover {
     transform: scale(1.2);
 
 }
-.modal-submit-button:hover{
-    background: linear-gradient(90deg, rgba(29,27,76,1) 0%, rgba(111,255,206,1) 50%, rgba(29,27,76,1) 100%);
+
+.modal-submit-button:hover {
+    background: linear-gradient(90deg, rgba(29, 27, 76, 1) 0%, rgba(111, 255, 206, 1) 50%, rgba(29, 27, 76, 1) 100%);
 }
-.modal-input-wrapper{
+
+.modal-input-wrapper {
     position: relative;
 }
-.modal-input-wrapper i{
+
+.modal-input-wrapper i {
     visibility: hidden;
     position: absolute;
     top: 22px;
     right: 10px;
 }
+
 .modal-input-wrapper.success input {
     border: 2px solid #6fffce;
 }
@@ -449,6 +605,7 @@
 .modal-input-wrapper.error p {
     visibility: visible;
 }
+
 .modal-input-wrapper.success i.fa-check-circle {
     color: #6fffce;
     visibility: visible;
@@ -458,7 +615,8 @@
     color: #e74c3c;
     visibility: visible;
 }
-.modal-content-success-wrapper{
+
+.modal-content-success-wrapper {
     display: none;
     position: fixed;
     z-index: 1;
@@ -467,11 +625,12 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
-.modal-content-success{
+
+.modal-content-success {
     /*background-color: #fefefe;*/
     margin: 10% auto;
     padding: 20px;
@@ -484,7 +643,8 @@
     background-position: center;
     border-radius: 10px;
 }
-.modal-content-success-text{
+
+.modal-content-success-text {
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -493,4 +653,5 @@
     padding: 8% 0 40% 0;
 
 }
+
 /*-------------------------------------modal ends--------------------------------------------*/
