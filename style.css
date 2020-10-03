@@ -1,11 +1,6 @@
 .header-wrapper {
     background-color: #fcf8f5;
-    padding-bottom: 80px;
-    /*background-image: url("img/background.gif");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-
+    padding-bottom: 50px;
 }
 
 .nav-logo {
@@ -174,8 +169,8 @@
     color: #1d1b4c;
     font-size: 14px;
     box-shadow: 0px 0px 26px 5px rgba(111, 255, 206, 0.52);
-    width: 145px;
-    padding: 15px 20px;
+    width: 120px;
+    padding: 10px 5px;
     border: transparent;
 }
 
@@ -421,6 +416,9 @@
     .title{
         margin: 100px 0 50px;
     }
+    .header-wrapper {
+        padding-bottom: 80px;
+    }
     /*.preparation-img-dots-1 {*/
 
         /*!*position: absolute;*!*/
@@ -431,35 +429,16 @@
 }
 
 /*----------------------------------------------preparation----------------------------------*/
-preparation-wrapper{
-
-}
 .preparation {
-    /*background-image: url("img/preparation_main.jpg");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
     margin: auto;
-    /*margin-top: 100px;*/
-    /*margin-bottom: 100px;*/
-    /*position: relative;*/
-    /*border: 1px solid black;*/
-    /*padding: 20px ;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*top: 385px;*/
-/*top:0;*/
 }
 
 .preparation-item {
     /*box-shadow: -3px 26px 88px -25px rgba(111, 255, 206, 0.52);*/
     box-shadow: 4px 4px 61px 9px rgba(111, 255, 206, 0.25);
     border-radius: 50%;
-    /*width: 20%;*/
-    /*height: 150px;*/
-    /*padding: 50px 0;*/
     width: 110px;
-    /*height: 110px;*/
+
     padding: 20px 0;
     text-align: center;
     background-color: white;
@@ -608,6 +587,10 @@ preparation-wrapper{
     .footer-item {
         display: flex;
         justify-content: space-between;
+    }
+    .button{
+        width: 145px;
+        padding: 15px 20px;
     }
 }
 /*----------------------------------------modal----------------------------------*/
