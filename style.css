@@ -768,5 +768,10 @@ preparation-wrapper{
     .modal-content{
         width: 90%;
     }
+    .footer {
+        padding: 30px 30px 10px;
+
+    }
+
 }
 /*-------------------------------------modal ends--------------------------------------------*/
