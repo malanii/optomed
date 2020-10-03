@@ -764,5 +764,9 @@ preparation-wrapper{
     padding: 8% 0 40% 0;
 
 }
-
+@media only screen and (min-width:320px) and (max-width:720px){
+    .modal-content{
+        width: 90%;
+    }
+}
 /*-------------------------------------modal ends--------------------------------------------*/
