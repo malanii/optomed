@@ -116,11 +116,6 @@
     .header-text-main {
         font-size: 30px;
     }
-
-    /*.container{*/
-    /*max-width: 95%;*/
-    /*}*/
-
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -211,9 +206,6 @@
     position: absolute;
     top: 22%;
     left: 13%;
-    /*margin-top: -20px;*/
-    /*margin-left: 100px;*/
-
 }
 
 .about-dots {
@@ -249,17 +241,9 @@
     .about-img-shadow, .about-dots, .about-img-container {
         display: none;
     }
-
-    /*.about-experience-text {*/
-    /*padding: 25px;*/
-    /*}*/
     .about-experience-text {
         /*margin-top: 20px;*/
     }
-
-    /*.about-experience-text {*/
-    /*padding: 17px;*/
-    /*}*/
 }
 
 @media only screen and (min-width: 991px) {
@@ -345,7 +329,7 @@
 .sections-icons {
     display: block;
     margin: auto;
-    padding-top: 85px;
+    padding-top: 65px;
     width: 64px;
 }
 
@@ -431,7 +415,6 @@
     box-shadow: 4px 4px 61px 9px rgba(111, 255, 206, 0.25);
     border-radius: 50%;
     width: 110px;
-
     padding: 20px 0;
     text-align: center;
     background-color: white;
@@ -466,11 +449,6 @@
    right: 10%;
     bottom: 6%;
 }
-
-.preparation-item-middle-raw {
-    /*margin-bottom: 80px;*/
-}
-
 .preparation-item-number {
     font-family: 'Kanit', sans-serif;
     color: #1d1b4c;
@@ -493,12 +471,9 @@
     }
 
 }
-
-
-
 /*-------------------------------examination---------------------------------------------*/
 .examination {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 100px;
 
 }
