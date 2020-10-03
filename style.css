@@ -668,9 +668,10 @@
     width: 30%;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    background-image: url("img/modalSuccess.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: white;
+    /*background-image: url("img/modalSuccess.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     border-radius: 10px;
 }
 
