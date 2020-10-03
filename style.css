@@ -664,7 +664,7 @@
 .modal-content-success {
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     width: 30%;
     animation-name: animatetop;
     animation-duration: 0.4s;
@@ -673,6 +673,7 @@
     /*background-size: cover;*/
     /*background-position: center;*/
     border-radius: 10px;
+    border: 5px solid #6fffce;
 }
 
 .modal-content-success-text {
@@ -681,7 +682,8 @@
     font-weight: 700;
     text-align: center;
     color: #1d1b4c;
-    padding: 8% 0 40% 0;
+    padding: 30% 0;
+
 
 }
 @media only screen and (min-width:320px) and (max-width:720px){

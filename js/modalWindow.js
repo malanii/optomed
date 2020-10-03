@@ -59,9 +59,9 @@ function checkInputs() {
     if (email.value === '') {
         setErrorFor(email, 'Email cannot be blank');
     }
-    // else if (!isEmail(email)) {
-    //     setErrorFor(email, 'Not a valid email');
-    // }
+    if (!emailIsValid(email.value)) {
+        setErrorFor(email, 'Not a valid email');
+    }
     else {
         setSuccessFor(email);
     }
@@ -117,3 +117,9 @@ function clearInputValue() {
         item.classList.remove('error');
     }
 }
+
+function emailIsValid (email) {
+   const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    return !!validation
+}
+
