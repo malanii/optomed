@@ -2,7 +2,6 @@
     background-color: #fcf8f5;
     padding-bottom: 50px;
 }
-
 .nav-logo {
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
@@ -10,7 +9,6 @@
     padding: 0;
     color: black;
 }
-
 .nav-logo:hover {
     text-decoration: none;
     color: black;
@@ -27,7 +25,6 @@
 .nav-link:hover {
     text-shadow: 2px 2px #6fffce;
     color: #1d1b4c;
-
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -94,43 +91,6 @@
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    .header-dots {
-        display: none;
-    }
-
-    .header-text-main {
-        font-size: 40px;
-        /*font-weight: 700;*/
-    }
-
-    /*.collapse.navbar-collapse{*/
-    /*padding-left: 0;*/
-    /*}*/
-    /*.expand-lg.navbar-nav.nav-link{*/
-    /*padding-left: 0; !important;*/
-    /*}*/
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .header-text-main {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .container {
-        max-width: 95%;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-    .header-text-main {
-        display: none;
-    }
-
-}
-
 /*-------------------------------common----------------------------------*/
 .title {
     font-family: 'Kanit', sans-serif;
@@ -138,7 +98,7 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin: 50px 0 20px;
+    padding: 50px 0 20px;
 }
 
 .text-main {
@@ -183,7 +143,7 @@
 .about {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    padding-top: 60px;
     position: relative;
 }
 
@@ -230,34 +190,16 @@
 .about-experience-text {
     background-color: #e8fff7;
     padding: 20px 10px;
-    /*margin-top: 23px;*/
 }
 
 .about-experience-text-margin {
     margin-top: 46px;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    .about-img-shadow, .about-dots, .about-img-container {
-        display: none;
-    }
-    .about-experience-text {
-        /*margin-top: 20px;*/
-    }
-}
-
-@media only screen and (min-width: 991px) {
-    .about-experience-text-margin {
-        margin-top: 13px;
-    }
-}
-
 /*--------------------services--------------------*/
 
 .services-wrapper {
     margin-bottom: 100px;
 }
-
 .services-section {
     display: flex;
     justify-content: space-between;
@@ -278,35 +220,6 @@
 .services-desc-margin {
     margin-top: 20px;
 }
-
-@media only screen and (min-width: 720px) {
-    .services-desc {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .services-desc-margin {
-        margin-top: 0;
-    }
-    .services-item{
-        padding: 50px 10px;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    .services-item {
-        width: 43%;
-    }
-
-    .text-common {
-        font-size: 12px;
-    }
-
-    .text-main {
-        font-size: 14px;
-    }
-}
-
 
 /*---------------------------------benefits------------------------------------------*/
 .benefits-wrapper {
@@ -371,28 +284,6 @@
     text-align: center;
 }
 
-@media only screen and (min-width: 720px) {
-    .benefits-additional {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .benefits-additional-text {
-        margin-bottom: 0;
-    }
-
-    .benefits-button {
-        margin: 0;
-    }
-    .title{
-        margin: 100px 0 50px;
-    }
-    .header-wrapper {
-        padding-bottom: 80px;
-    }
-}
-
 /*----------------------------------------------preparation----------------------------------*/
 .preparation {
     margin: auto;
@@ -409,34 +300,41 @@
     position: absolute;
 
 }
-.preparation-img{
+
+.preparation-img {
     display: block;
     margin: auto;
     width: 100%;
 }
-.item-1{
-    top:0;
+
+.item-1 {
+    top: 0;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
 }
-.item-2{
+
+.item-2 {
     left: 0;
-   bottom: 49%;
+    bottom: 49%;
 }
-.item-3{
+
+.item-3 {
     right: 0;
     bottom: 49%;
 }
-.item-4{
+
+.item-4 {
     left: 10%;
     bottom: 6%;
 }
-.item-5{
-   right: 10%;
+
+.item-5 {
+    right: 10%;
     bottom: 6%;
 }
+
 .preparation-item-number {
     font-family: 'Kanit', sans-serif;
     color: #1d1b4c;
@@ -446,33 +344,24 @@
     text-shadow: #6fffce 2px 2px;
 
 }
+
 .preparation-img-dots-2 {
     position: absolute;
     bottom: -10%;
     right: 1%;
 }
 
-@media only screen and (min-width: 720px) {
-    .preparation-item{
-    padding: 40px 0;
-        width: 160px;
-    }
-
-}
 /*-------------------------------examination---------------------------------------------*/
 .examination {
     margin-top: 150px;
     margin-bottom: 100px;
-
 }
-
 /*------------------------------footer---------------------------------------------*/
 .footer {
     background-color: #1d1b4c;
     padding: 80px 80px 30px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-
 }
 
 .footer-header {
@@ -489,6 +378,7 @@
     color: #bcbcc8;
     margin-bottom: 10px;
 }
+
 .footer-text:hover {
     text-decoration: none;
 }
@@ -518,16 +408,7 @@
     color: #6fffce;
     font-size: 36px;
 }
-@media only screen and (min-width:720px) {
-    .footer-item {
-        display: flex;
-        justify-content: space-between;
-    }
-    .button{
-        width: 145px;
-        padding: 15px 20px;
-    }
-}
+
 /*----------------------------------------modal----------------------------------*/
 .modal {
     display: none;
@@ -664,14 +545,10 @@
 .modal-content-success {
     margin: 10% auto;
     padding: 20px;
-    /*border: 1px solid #888;*/
     width: 30%;
     animation-name: animatetop;
     animation-duration: 0.4s;
     background-color: white;
-    /*background-image: url("img/modalSuccess.jpg");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
     border-radius: 10px;
     border: 5px solid #6fffce;
 }
@@ -683,23 +560,135 @@
     text-align: center;
     color: #1d1b4c;
     padding: 30% 0;
-
-
 }
-@media only screen and (min-width:320px) and (max-width:720px){
-    .modal-content{
+
+/*-------------------------------------modal ends--------------------------------------------*/
+
+/*----------------------------------------media------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+    .modal-content {
         width: 90%;
     }
+
     .footer {
         padding: 30px 30px 10px;
     }
+
     .modal-content-success {
         width: 60%;
     }
 }
-@media only screen and (min-width:720px) and (max-width:991px){
+
+@media only screen and (min-width: 720px) and (max-width: 991px) {
     .modal-content-success {
         width: 50%;
     }
 }
-/*-------------------------------------modal ends--------------------------------------------*/
+
+@media only screen and (min-width: 720px) {
+    .footer-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button {
+        width: 145px;
+        padding: 15px 20px;
+    }
+
+    .preparation-item {
+        padding: 40px 0;
+        width: 160px;
+    }
+
+    .benefits-additional {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .benefits-additional-text {
+        margin-bottom: 0;
+    }
+
+    .benefits-button {
+        margin: 0;
+    }
+
+    .title {
+        margin: 100px 0 50px;
+    }
+
+    .header-wrapper {
+        padding-bottom: 80px;
+    }
+
+    .services-desc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-desc-margin {
+        margin-top: 0;
+    }
+
+    .services-item {
+        padding: 50px 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .services-item {
+        width: 43%;
+    }
+
+    .text-common {
+        font-size: 12px;
+    }
+
+    .text-main {
+        font-size: 14px;
+    }
+
+    .header-dots {
+        display: none;
+    }
+
+    .header-text-main {
+        font-size: 40px;
+        /*font-weight: 700;*/
+    }
+
+    .about-img-shadow, .about-dots, .about-img-container {
+        display: none;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header-text-main {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .header-text-main {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+    .about-experience-text-margin {
+        margin-top: 13px;
+    }
+}
