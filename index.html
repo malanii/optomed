@@ -1,400 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OPTOMED</title>
-    <link rel="icon" href="img/logo.jpg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-
-
-</head>
-<body>
-<div class="wrapper">
-    <!-------------------------------header------------------------->
-    <div class="header-wrapper">
+    <link rel="icon" href="img/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-------------------------------header------------------------->
+      <div class="header-wrapper">
         <div class="container">
-            <!--------------------navbar----------------->
-            <nav class="navbar navbar-expand-lg">
-                <a class="nav-logo col-6 col-lg-4" href="#">OPTOMED</a>
+          <!--------------------navbar----------------->
+          <nav class="navbar navbar-expand-lg">
+            <a class="nav-logo col-6 col-lg-4" href="#">OPTOMED</a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-line"></span>
-                    <span class=" navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+            </button>
 
-                </button>
-
-                <div class="collapse navbar-collapse col-10 col-lg-8" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#benefits">Benefits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#preparation">Preparation for surgery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#examination">Medical examination</a>
-                        </li>
-                        <!--<li class="nav-item">-->
-                            <!--<a class="button nav-link modal-link" href="#">Schedule a visit</a>-->
-                        <!--</li>-->
-
-                    </ul>
-
-                </div>
-
-            </nav>
-            <!--------------------------------------navbar ends----------------------------------------------->
-            <div class="header">
-                <div class="header-text-wrapper col-5 col-sm-7">
-                    <img src="img/header_small_pict.png"/>
-                    <p class="text-main header-text">Doctor Maria Han's office</p>
-                    <p class="header-text header-text-main">Support <br/>for modern ophthalmology</p>
-                    <button class="button">Schedule a visit</button>
-                </div>
-
-                <img class="header-dots" src="img/header_dots.jpg">
-                <img class="header-img col-md-5 col-6 col-sm-5 col-lg-4 col-xl-4" src="img/portrait.jpg">
+            <div
+              class="collapse navbar-collapse col-10 col-lg-8"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutMe">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#benefits">Benefits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#preparation"
+                    >Preparation for surgery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#examination"
+                    >Medical examination</a
+                  >
+                </li>
+                <!--<li class="nav-item">-->
+                <!--<a class="button nav-link modal-link" href="#">Schedule a visit</a>-->
+                <!--</li>-->
+              </ul>
             </div>
-        </div>
-    </div>
+          </nav>
+          <!--------------------------------------navbar ends----------------------------------------------->
+          <div class="header">
+            <div class="header-text-wrapper col-5 col-sm-7">
+              <img src="img/header_small_pict.png" />
+              <p class="text-main header-text">Doctor Maria Han's office</p>
+              <p class="header-text header-text-main">
+                Support <br />for modern ophthalmology
+              </p>
+              <button class="button">Schedule a visit</button>
+            </div>
 
-    <!----------------------------header ends------------------------------------------------------>
-    <!----------------------------about starts------------------------------------------------------>
-    <div id="aboutMe" class="about container">
+            <img class="header-dots" src="img/header_dots.jpg" />
+            <img
+              class="header-img col-md-5 col-6 col-sm-5 col-lg-4 col-xl-4"
+              src="img/portrait.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------header ends------------------------------------------------------>
+      <!----------------------------about starts------------------------------------------------------>
+      <div id="aboutMe" class="about container">
         <div class="about-img-container col-lg-5">
-            <img class=" about-img-shadow" src="img/about_1.png">
-            <img class="about-img about-img-shadow" src="img/about_2.png">
-            <img class="about-dots" src="img/about_dots.jpg">
+          <img class="about-img-shadow" src="img/about_1.png" />
+          <img class="about-img about-img-shadow" src="img/about_2.png" />
+          <img class="about-dots" src="img/about_dots.jpg" />
         </div>
 
+        <div class="col-lg-6 col-md-12">
+          <img class="" src="img/aboutDetail.jpg" />
+          <p class="about-text-header">Maria Hans, DMSC</p>
+          <p class="text-main">
+            I am optometrist with almost twenty years of experience in medical
+            practise. I diagnose and rehabilitate binocular vision disorders in
+            children and adults, as well as eye disorders such as strabismus,
+            amblyopia, impaired eye convention and accommodation.
+          </p>
+          <p class="text-common mt-4">
+            I have gained experience in this area for many years in respected
+            institution.
+          </p>
 
-        <div class=" col-lg-6 col-md-12">
-            <img class="" src="img/aboutDetail.jpg">
-            <p class="about-text-header">Maria Hans, DMSC</p>
-            <p class="text-main">I am optometrist with almost twenty years of experience in medical practise.
-                I diagnose and rehabilitate binocular vision disorders in children and adults, as well as eye disorders
-                such as strabismus, amblyopia, impaired eye convention and accommodation. </p>
-            <p class="text-common mt-4">I have gained experience in this area for many
-                years in respected institution.</p>
+          <div class="about-experience">
+            <img class="about-experience-img" src="img/aboutDetail2.jpg" />
 
-
-            <div class="about-experience">
-                <img class=" about-experience-img" src="img/aboutDetail2.jpg">
-
-                <div  class="col-lg-9 ">
-                    <div class="about-experience-text">
-                        <p class="text-main">Faculty of Medicine of the Medical Academy</p>
-                        <p class="text-common">Warsaw</p>
-                    </div>
-                    <div class="about-experience-text about-experience-text-margin">
-                        <p class="text-main">Specialist Hospital of St.Wojciech Adalbert</p>
-                        <p class="text-common">Gdansk-Zappa</p>
-                    </div>
-                    <div class="about-experience-text about-experience-text-margin">
-                        <p class="text-main">Ophthalmology Dep. of the Allgemeinen Hospital</p>
-                        <p class="text-common">Vienna</p>
-                    </div>
-                </div>
-
+            <div class="col-lg-9">
+              <div class="about-experience-text">
+                <p class="text-main">
+                  Faculty of Medicine of the Medical Academy
+                </p>
+                <p class="text-common">Warsaw</p>
+              </div>
+              <div class="about-experience-text about-experience-text-margin">
+                <p class="text-main">
+                  Specialist Hospital of St.Wojciech Adalbert
+                </p>
+                <p class="text-common">Gdansk-Zappa</p>
+              </div>
+              <div class="about-experience-text about-experience-text-margin">
+                <p class="text-main">
+                  Ophthalmology Dep. of the Allgemeinen Hospital
+                </p>
+                <p class="text-common">Vienna</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!------------------------------services starts--------------------------------------------------->
-    <div id="services" class="services-wrapper container">
+      </div>
+      <!------------------------------services starts--------------------------------------------------->
+      <div id="services" class="services-wrapper container">
         <h1 class="title">Scope of services provided</h1>
         <div class="services-section text-center col-12">
-            <div class=" services-item">
-                <img src="img/service1.jpg"/>
-                <p class="text-common mt-4">Performing optometric tests and specific ophthalmic tests.</p>
-            </div>
-            <div class="services-item">
-                <img src="img/service2.jpg"/>
-                <p class="text-common mt-4">Conducting exercises in amblyopia and disorders binocular vision.</p>
-            </div>
-            <div class=" services-item">
-                <img src="img/service3.jpg"/>
-                <p class="text-common mt-4">Selection of optical and non-optical aids.</p>
-            </div>
-            <div class="services-item mr-0">
-                <img src="img/service4.jpg"/>
-                <p class="text-common mt-4">Carrying out activities in the field of optometric and ophthalmic
-                    prophylaxis.</p>
-            </div>
+          <div class="services-item">
+            <img src="img/service1.jpg" />
+            <p class="text-common mt-4">
+              Performing optometric tests and specific ophthalmic tests.
+            </p>
+          </div>
+          <div class="services-item">
+            <img src="img/service2.jpg" />
+            <p class="text-common mt-4">
+              Conducting exercises in amblyopia and disorders binocular vision.
+            </p>
+          </div>
+          <div class="services-item">
+            <img src="img/service3.jpg" />
+            <p class="text-common mt-4">
+              Selection of optical and non-optical aids.
+            </p>
+          </div>
+          <div class="services-item mr-0">
+            <img src="img/service4.jpg" />
+            <p class="text-common mt-4">
+              Carrying out activities in the field of optometric and ophthalmic
+              prophylaxis.
+            </p>
+          </div>
         </div>
 
-        <div class="services-desc ">
-            <p class="text-main mr-4 col-md-5">As an experienced optometrist, I can provide my
-                patients with professional and comprehensive care,
-                which is not limited only to physical health - by
-                supervising it, because it is also necessary to take care
-                of the patient's psyche, the condition of which directly
-                affects the effectiveness of treatment.</p>
-            <div class="col-md-6 services-desc-margin">
-                <p class="text-common pb-4">We perform eye examinations In cases where there are
-                    difficulties related to binocular functioning, and exercises when
-                    the eyesight, due to the lack of proper cooperation of both
-                    eyeballs, is aillng.</p>
-                <button class="button ">Schedule a visit</button>
-            </div>
+        <div class="services-desc">
+          <p class="text-main mr-4 col-md-5">
+            As an experienced optometrist, I can provide my patients with
+            professional and comprehensive care, which is not limited only to
+            physical health - by supervising it, because it is also necessary to
+            take care of the patient's psyche, the condition of which directly
+            affects the effectiveness of treatment.
+          </p>
+          <div class="col-md-6 services-desc-margin">
+            <p class="text-common pb-4">
+              We perform eye examinations In cases where there are difficulties
+              related to binocular functioning, and exercises when the eyesight,
+              due to the lack of proper cooperation of both eyeballs, is aillng.
+            </p>
+            <button class="button">Schedule a visit</button>
+          </div>
         </div>
-    </div>
-    <!------------------------------services ends--------------------------------------------------->
-    <!---------------------------------benefits starts--------------------------->
-    <div id="benefits" class="benefits-wrapper">
+      </div>
+      <!------------------------------services ends--------------------------------------------------->
+      <!---------------------------------benefits starts--------------------------->
+      <div id="benefits" class="benefits-wrapper">
         <div class="container">
-            <img class="sections-icons" src="img/benefits.jpg"/>
-            <h2 class="title">Benefits of using the service of such experts</h2>
-            <img class="benefits-img-dots-1" src="img/dots.png">
-            <img class="benefits-img-dots-2" src="img/dots.png">
+          <img class="sections-icons" src="img/benefits.jpg" />
+          <h2 class="title">Benefits of using the service of such experts</h2>
+          <img class="benefits-img-dots-1" src="img/dots.png" />
+          <img class="benefits-img-dots-2" src="img/dots.png" />
 
-            <div class="col-12 col-lg-9 m-auto">
-                <div class="benefits-item">
-                    <div class="benefits-item-number">1</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Medical services on the highest level</p>
-                        <p class="text-common">confirmed by numerous certificates</p>
-                    </div>
-                </div>
-
-                <div class="benefits-item">
-                    <div class="benefits-item-number">2</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Personal contact with a doctor</p>
-                        <p class="text-common">medical history to ensure the selection of treatment methods
-                            appropriate to the
-                            patient's needs</p>
-                    </div>
-                </div>
-                <div class="benefits-item">
-                    <div class="benefits-item-number">3</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Rehabilitation</p>
-                        <p class="text-common">increasing the chance of fullrecovery carried out on the spot
-                            in the office</p>
-                    </div>
-                </div>
-                <div class="benefits-item">
-                    <div class="benefits-item-number">4</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Modern diagnostics on the site</p>
-                        <p class="text-common">access to all ophthalmological examinations without having to
-                            wait long In line</p>
-                    </div>
-                </div>
-
-                <div class="benefits-item">
-                    <div class="benefits-item-number">5</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Home visits</p>
-                        <p class="text-common">at a time convenient for the patient without prior
-                            appointment</p>
-                    </div>
-                </div>
-                <div class="benefits-item">
-                    <div class="benefits-item-number">6</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Care for the youngest</p>
-                        <p class="text-common">research methods adapted to the youngest - without fear of
-                            the doctor and
-                            subsequent visits</p>
-                    </div>
-                </div>
-
-                <div class="benefits-item">
-                    <div class="benefits-item-number">7</div>
-                    <div class="benefits-item-text col-11">
-                        <p class="text-main">Comprehensive medical care</p>
-                        <p class="text-common">preparation for surgical procedures covering both the mental
-                            and physical spher
-                            as well as convalescence</p>
-                    </div>
-                </div>
-
-
-                <div class="benefits-additional">
-                    <p class="text-main benefits-additional-text">An experienced specialist at your fingertips, do not
-                        hesitate!</p>
-                    <button class="button benefits-button">Schedule a visit</button>
-                </div>
+          <div class="col-12 col-lg-9 m-auto">
+            <div class="benefits-item">
+              <div class="benefits-item-number">1</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Medical services on the highest level</p>
+                <p class="text-common">confirmed by numerous certificates</p>
+              </div>
             </div>
 
-        </div>
+            <div class="benefits-item">
+              <div class="benefits-item-number">2</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Personal contact with a doctor</p>
+                <p class="text-common">
+                  medical history to ensure the selection of treatment methods
+                  appropriate to the patient's needs
+                </p>
+              </div>
+            </div>
+            <div class="benefits-item">
+              <div class="benefits-item-number">3</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Rehabilitation</p>
+                <p class="text-common">
+                  increasing the chance of fullrecovery carried out on the spot
+                  in the office
+                </p>
+              </div>
+            </div>
+            <div class="benefits-item">
+              <div class="benefits-item-number">4</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Modern diagnostics on the site</p>
+                <p class="text-common">
+                  access to all ophthalmological examinations without having to
+                  wait long In line
+                </p>
+              </div>
+            </div>
 
-    </div>
-    <!----------------------------preparation block starts-------------------------------------------------------->
-    <div id="preparation" class=" col-lg-8 m-auto preparation-wrapper">
-        <img class="sections-icons" src="img/preparation_icon.jpg">
+            <div class="benefits-item">
+              <div class="benefits-item-number">5</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Home visits</p>
+                <p class="text-common">
+                  at a time convenient for the patient without prior appointment
+                </p>
+              </div>
+            </div>
+            <div class="benefits-item">
+              <div class="benefits-item-number">6</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Care for the youngest</p>
+                <p class="text-common">
+                  research methods adapted to the youngest - without fear of the
+                  doctor and subsequent visits
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits-item">
+              <div class="benefits-item-number">7</div>
+              <div class="benefits-item-text col-11">
+                <p class="text-main">Comprehensive medical care</p>
+                <p class="text-common">
+                  preparation for surgical procedures covering both the mental
+                  and physical spher as well as convalescence
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits-additional">
+              <p class="text-main benefits-additional-text">
+                An experienced specialist at your fingertips, do not hesitate!
+              </p>
+              <button class="button benefits-button">Schedule a visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------preparation block starts-------------------------------------------------------->
+      <div id="preparation" class="col-lg-8 m-auto preparation-wrapper">
+        <img class="sections-icons" src="img/preparation_icon.jpg" />
         <h3 class="title">Preparation for surgery</h3>
-        <p class="text-common text-center mb-4">Are you planning an ophthalmic procedure? We will make sure
-            that
-            your
-            recovery is quick. We provide full care before and after the procedure.</p>
+        <p class="text-common text-center mb-4">
+          Are you planning an ophthalmic procedure? We will make sure that your
+          recovery is quick. We provide full care before and after the
+          procedure.
+        </p>
         <!--<img class="preparation-img-dots-1" src="img/triangle_dots.jpg">-->
-        <img class="preparation-img-dots-2" src="img/triangle_dots_2.jpg">
+        <img class="preparation-img-dots-2" src="img/triangle_dots_2.jpg" />
 
-        <div class="preparation  p-0 col-12 col-sm-10 col-md-8 col-lg-9 col-xl-8">
-            <img src="img/preparation_main.png" alt="" class="preparation-img col-12 ">
-            <div class="preparation-item m-auto item-1">
-                <p class="preparation-item-number ">1</p>
-                <p class="text-common"> Ophthalmological  <br/>qualification</p>
+        <div
+          class="preparation p-0 col-12 col-sm-10 col-md-8 col-lg-9 col-xl-8"
+        >
+          <img
+            src="img/preparation_main.png"
+            alt=""
+            class="preparation-img col-12"
+          />
+          <div class="preparation-item m-auto item-1">
+            <p class="preparation-item-number">1</p>
+            <p class="text-common">Ophthalmological <br />qualification</p>
+          </div>
+
+          <div
+            class="d-flex justify-content-between preparation-item-middle-raw"
+          >
+            <div class="preparation-item item-2">
+              <p class="preparation-item-number">5</p>
+              <p class="text-common">
+                Postoperative <br />
+                control
+              </p>
             </div>
-
-
-            <div class="d-flex justify-content-between preparation-item-middle-raw">
-
-                <div class="preparation-item item-2">
-                    <p class="preparation-item-number">5</p>
-                    <p class="text-common">Postoperative <br/> control </p>
-                </div>
-                <div class="preparation-item item-3">
-                    <p class="preparation-item-number">2</p>
-                    <p class="text-common"> Anesthesiological <br/> qualification</p>
-                </div>
+            <div class="preparation-item item-3">
+              <p class="preparation-item-number">2</p>
+              <p class="text-common">
+                Anesthesiological <br />
+                qualification
+              </p>
             </div>
+          </div>
 
+          <!--<div class="d-flex justify-content-around">-->
 
-            <!--<div class="d-flex justify-content-around">-->
-
-                <div class="preparation-item item-4">
-                    <p class="preparation-item-number">4</p>
-                    <p class="text-common">Patient <br/> care </p>
-                </div>
-                <div class="preparation-item item-5">
-                    <p class="preparation-item-number">3</p>
-                    <p class="text-common"> Surgical <br/> procedure</p>
-                </div>
-            <!--</div>-->
+          <div class="preparation-item item-4">
+            <p class="preparation-item-number">4</p>
+            <p class="text-common">
+              Patient <br />
+              care
+            </p>
+          </div>
+          <div class="preparation-item item-5">
+            <p class="preparation-item-number">3</p>
+            <p class="text-common">
+              Surgical <br />
+              procedure
+            </p>
+          </div>
+          <!--</div>-->
         </div>
-
-    </div>
-    <!----------------preparation block ends--------------------------------------------------------------------------->
-    <!---------------------------medical examination starts---------------------------->
-    <div id="examination" class="examination container">
+      </div>
+      <!----------------preparation block ends--------------------------------------------------------------------------->
+      <!---------------------------medical examination starts---------------------------->
+      <div id="examination" class="examination container">
         <h4 class="title">Medical examinations that we do</h4>
         <div class="services-section text-center">
-            <div class="services-item">
-                <img src="img/examination1.jpg"/>
-                <p class="text-common mt-2">Visual acuity test to far and near</p>
-            </div>
-            <div class="services-item">
-                <img src="img/examination2.jpg"/>
-                <p class="text-common mt-2">Static and kinetic perimetry</p>
-            </div>
-            <div class="services-item">
-                <img src="img/examination3.jpg"/>
-                <p class="text-common mt-2">Scanning Laser Polarimetry (GDx) </p>
-            </div>
-            <div class="services-item">
-                <img src="img/examination4.jpg"/>
-                <p class="text-common mt-2">Optical coherence of the anterior and posterior segments
-                    of the eye</p>
-            </div>
+          <div class="services-item">
+            <img src="img/examination1.jpg" />
+            <p class="text-common mt-2">Visual acuity test to far and near</p>
+          </div>
+          <div class="services-item">
+            <img src="img/examination2.jpg" />
+            <p class="text-common mt-2">Static and kinetic perimetry</p>
+          </div>
+          <div class="services-item">
+            <img src="img/examination3.jpg" />
+            <p class="text-common mt-2">Scanning Laser Polarimetry (GDx)</p>
+          </div>
+          <div class="services-item">
+            <img src="img/examination4.jpg" />
+            <p class="text-common mt-2">
+              Optical coherence of the anterior and posterior segments of the
+              eye
+            </p>
+          </div>
         </div>
-    </div>
-    <!----------------------------medical examination ends------------------------------------------------------------>
-    <!-------------------------------footer start--------------------------------------->
-    <div class="container m-auto">
+      </div>
+      <!----------------------------medical examination ends------------------------------------------------------------>
+      <!-------------------------------footer start--------------------------------------->
+      <div class="container m-auto">
         <div class="footer">
-            <div class="footer-item">
-                <div>
-                    <p class="footer-header">Optometry clinic of the medical doctor Maria Hans </p>
-                    <p class="footer-text">Warsaw, Medical Street 14, 90-100</p>
-                    <a href="tel:+48 123-456-789" class="footer-text">phone +48 123-456-789</a>
-                </div>
-                <div>
-                    <p class="footer-header">Book your visit today!</p>
-                    <button class="button">Schedule a visit</button>
-                </div>
+          <div class="footer-item">
+            <div>
+              <p class="footer-header">
+                Optometry clinic of the medical doctor Maria Hans
+              </p>
+              <p class="footer-text">Warsaw, Medical Street 14, 90-100</p>
+              <a href="tel:+48 123-456-789" class="footer-text"
+                >phone +48 123-456-789</a
+              >
             </div>
-            <div class="footer-detail-text-wrapper"><p class="footer-detail-text">OPTOMED &copy; 2020 by Yana
-                Ignatova</p>
+            <div>
+              <p class="footer-header">Book your visit today!</p>
+              <button class="button">Schedule a visit</button>
             </div>
+          </div>
+          <div class="footer-detail-text-wrapper">
+            <p class="footer-detail-text">
+              OPTOMED &copy; 2020 by Yana Ignatova
+            </p>
+          </div>
         </div>
-
-    </div>
-    <!--------------------------arrow to top---------------------------------------------------------->
-    <a href="#" onclick="topFunction()" id="topBtn" class="scroll-button"><i
-            class="fa fa-chevron-up icon-to-top"></i></a>
-    <!--------------------------arrow to top---------------------------------------------------------->
-<!-------------------------------------------modal window---------------------------------------------->
-    <div id="myModal" class="modal">
-
+      </div>
+      <!--------------------------arrow to top---------------------------------------------------------->
+      <a href="#" onclick="topFunction()" id="topBtn" class="scroll-button"
+        ><i class="fa fa-chevron-up icon-to-top"></i
+      ></a>
+      <!--------------------------arrow to top---------------------------------------------------------->
+      <!-------------------------------------------modal window---------------------------------------------->
+      <div id="myModal" class="modal">
         <div id="modalContent" class="modal-content">
-            <button id="closeModal" class="closeModal">&times;</button>
-            <h5 class="title mt-2 mb-2">Book your appointment</h5>
-            <div id="error_message"></div>
-            <form  id="form">
-                <div class="modal-input-wrapper">
-                    <input class="modal-input" type="text" id='name' placeholder="Your Name">
-                    <i class="modal-icons fa fa-check-circle"></i>
-                    <i class="modal-icons fa fa-exclamation-circle"></i>
-                    <p></p>
-                </div>
-                <div class="modal-input-wrapper">
-                <input class="modal-input" type="text"  id='email' placeholder="Your Email">
-                    <i class="modal-icons fa fa-check-circle"></i>
-                    <i class="modal-icons fa fa-exclamation-circle"></i>
-                    <p></p>
-                </div>
+          <button id="closeModal" class="closeModal">&times;</button>
+          <h5 class="title mt-2 mb-2">Book your appointment</h5>
+          <div id="error_message"></div>
+          <form id="form">
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                id="name"
+                placeholder="Your Name"
+              />
+              <i class="modal-icons fa fa-check-circle"></i>
+              <i class="modal-icons fa fa-exclamation-circle"></i>
+              <p></p>
+            </div>
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                id="email"
+                placeholder="Your Email"
+              />
+              <i class="modal-icons fa fa-check-circle"></i>
+              <i class="modal-icons fa fa-exclamation-circle"></i>
+              <p></p>
+            </div>
 
-                <div class="modal-input-wrapper">
-                <input class="modal-input" type="text"  id='phone' placeholder="Your Contact Number">
-                    <i class="modal-icons fa fa-check-circle"></i>
-                    <i class="modal-icons fa fa-exclamation-circle"></i>
-                    <p></p>
-                </div>
-                <div class="modal-input-wrapper">
-                <input class="modal-input" type="text" id='date' placeholder="Date">
-                    <i class="modal-icons fa fa-check-circle"></i>
-                    <i class="modal-icons fa fa-exclamation-circle"></i>
-                    <p></p>
-                </div>
-                <div class="modal-input-wrapper">
-                <input class="modal-input" id='message' placeholder="Message">
-                    <i class="modal-icons fa fa-check-circle"></i>
-                    <i class="modal-icons fa fa-exclamation-circle"></i>
-                    <p class="mb-2"></p>
-                </div>
-                <button id="modalSubmit" class="modal-submit-button" type="submit">Get appointment</button>
-            </form>
-
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                id="phone"
+                placeholder="Your Contact Number"
+              />
+              <i class="modal-icons fa fa-check-circle"></i>
+              <i class="modal-icons fa fa-exclamation-circle"></i>
+              <p></p>
+            </div>
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                id="date"
+                placeholder="Date"
+              />
+              <i class="modal-icons fa fa-check-circle"></i>
+              <i class="modal-icons fa fa-exclamation-circle"></i>
+              <p></p>
+            </div>
+            <div class="modal-input-wrapper">
+              <input class="modal-input" id="message" placeholder="Message" />
+              <i class="modal-icons fa fa-check-circle"></i>
+              <i class="modal-icons fa fa-exclamation-circle"></i>
+              <p class="mb-2"></p>
+            </div>
+            <button id="modalSubmit" class="modal-submit-button" type="submit">
+              Get appointment
+            </button>
+          </form>
         </div>
-    </div>
-    <!------------------------------success message----------------------------------------------------->
-    <div id="successMessage" class="modal-content-success-wrapper">
+      </div>
+      <!------------------------------success message----------------------------------------------------->
+      <div id="successMessage" class="modal-content-success-wrapper">
         <div class="modal-content-success">
-            <h6 class="modal-content-success-text">Thanks!<br/>Our manager will connect with you in one hour. </h6>
+          <h6 class="modal-content-success-text">
+            Thanks!<br />Our manager will connect with you in one hour.
+          </h6>
         </div>
-
+      </div>
+      <!--------------------------------------modal window ends------------------------------------------>
     </div>
-    <!--------------------------------------modal window ends------------------------------------------>
-</div>
-<script src="js/scrollToTop.js"></script>
-<script src="js/modalWindow.js"></script>
-<script src="https://use.fontawesome.com/c44a79e7ba.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="https://use.fontawesome.com/c44a79e7ba.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
